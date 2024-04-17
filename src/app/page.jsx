@@ -66,7 +66,7 @@ export default function Page() {
 <section className="w-full min-h-screen bg-white-100">
   <div className="container mx-auto px-6 py-20">
     <h2 className="text-4xl font-semibold text-center mb-12">My Recent Work</h2>
-    <div className="flex flex-wrap justify-center gap-40 ">
+    <div className="flex flex-wrap justify-center gap-20 ">
       {/* Map through your projects and create a card for each */}
       <ProjectCard
         title="Pantry Pal"
@@ -79,6 +79,12 @@ export default function Page() {
         description="A web-based weather app built using JavaScript, HTML, and CSS leveraging the OpenWeather API."
         imageUrl="/suncloud.webp"
         projectUrl="https://dmarino389.github.io/weather_app//"
+      />
+      <ProjectCard
+        title="PokeApp"
+        description="The Pokédex App is an interactive and engaging web application I developed using Flask, Jinja2, SQLite, and Postman, with integration of the PokéAPI and Bootstrap for styling."
+        imageUrl="/pokemon.png"
+        projectUrl="https://poke-fbst.onrender.com/"
       />
       {/* Repeat <ProjectCard /> for other projects */}
     </div>
