@@ -26,8 +26,8 @@ export default function Page() {
       {/* Profession and Skills Section */}
       <section id='skills' className="w-full min-h-screen bg-white">
   <div className="container mx-auto px-6 py-10 text-center">
-    <h2 className="text-4xl font-semibold mb-8">Hi, I'm Dimitrius, Pleasure to meet you!</h2>
-    <p className="text-xl mb-10 font-semibold">I'm an experienced software developer with an interest in solving complex issues and enjoying good music. I specialize in creating functional and user-friendly applications</p>
+    <h2 className="text-4xl font-semibold mb-8">Hi, Im Dimitrius, Pleasure to meet you!</h2>
+    <p className="text-xl mb-10 font-semibold">Im an experienced software developer with an interest in solving complex issues and enjoying good music. I specialize in creating functional and user-friendly applications</p>
 
     <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0"> {/* Use padding to adjust layout on smaller screens */}
       {/* Frontend Developer Column */}
