@@ -40,12 +40,12 @@ export default function Layout({ children }) {
         </a>
         {/* Say Hello link */}
         <a
-          href="#contact"
-          onClick={(e) => handleScroll(e, "#contact")}
-          className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md cursor-pointer"
-        >
-          Say Hello
-        </a>
+  href="/contact" // Add the leading slash
+  className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md"
+>
+  Say Hello
+</a>
+
       </nav>
       
       <main>{children}</main>

@@ -11,15 +11,15 @@ export default function Page() {
     <div className="flex flex-col">
       {/* Introduction Section */}
       <section id='home' className="flex items-center justify-center w-full min-h-screen bg-gray-200">
-  <div className="text-center">
-    <h1 className="text-5xl font-bold">Next.Js Developer</h1>
-    <p className="mt-4 text-xl">I design and code beautifully simple things, and I love what I do.</p>
-    {/* Profile Image */}
-    <Image src="/profile.webp" alt="Profile" className="mt-8 mb-8 w-48 h-48 object-cover rounded-full mx-auto" />
-    {/* Computers SVG */}
-    <Image src="/computers.svg" alt="Computers" className="mt-8 mx-auto" />
-  </div>
-</section>
+        <div className="text-center">
+          <h1 className="text-5xl font-bold">Next.Js Developer</h1>
+          <p className="mt-4 text-xl">I design and code beautifully simple things, and I love what I do.</p>
+          {/* Profile Image */}
+          <Image src="/profile.webp" alt="Profile" width={200} height={300} className="object-cover rounded-full mx-auto mt-10" />
+          {/* Computers SVG */}
+          <Image src="/computers.svg" alt="Computers" width={500} height={200} className="object-cover mx-auto pt-10" />
+        </div>
+      </section>
 
 
 
@@ -33,7 +33,7 @@ export default function Page() {
       {/* Frontend Developer Column */}
       <div className="flex-1 mt-20 md:mt-40"> {/* Use less margin-top on smaller screens */}
         <div className="mb-4 w-24 h-24 md:w-32 md:h-32 mx-auto">
-          <Image src="/Frontend.svg" alt="Frontend Developer" className="w-full h-full" />
+          <Image src="/Frontend.svg" alt="Frontend Developer" width={300} height={300} />
         </div>
         <h3 className="text-3xl font-semibold">Frontend Developer</h3>
         <p className="mt-2 font-bold">I create responsive and dynamic user interfaces with modern frontend technologies.</p>
@@ -46,7 +46,7 @@ export default function Page() {
       {/* Backend Developer Column */}
       <div className="flex-1 mt-20 md:mt-40">
         <div className="mb-4 w-24 h-24 md:w-32 md:h-32 mx-auto">
-          <Image src="/Backend.svg" alt="Backend Developer" className="w-full h-full" />
+          <Image src="/Backend.svg" alt="Backend Developer" width={300} height={300} className="w-full h-full" />
         </div>
         <h3 className="text-3xl font-semibold">Backend Developer</h3>
         <p className="mt-2 font-bold">I architect and build scalable and performant server-side applications.</p>
