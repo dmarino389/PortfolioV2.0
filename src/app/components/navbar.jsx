@@ -1,7 +1,7 @@
 // app/layout.jsx
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function Layout({ children }) {
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -30,13 +30,23 @@ export default function Layout({ children }) {
     <>
       <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
         {/* We will use a standard <a> tag with an onClick event for smooth scrolling */}
-        <a href="#home" onClick={(e) => handleScroll(e, '#home')} className="text-xl font-bold cursor-pointer">
-          <img src="/initiallogo.webp" alt="Logo" className="h-8 w-8" />
-        </a> {/* Placeholder for SVG Logo */}
+        <a
+          href="#home"
+          onClick={(e) => handleScroll(e, "#home")}
+          className="text-xl font-bold cursor-pointer"
+        >
+          <img src="/inititiallogo.jpg" alt="Logo" className="h-8 w-8" />
+        </a>{" "}
+        {/* Placeholder for SVG Logo */}
         {/* Other navigation links */}
-        <a href="contact" onClick={(e) => handleScroll(e, '#contact')} className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md cursor-pointer">
+        <a
+          href="contact"
+          onClick={(e) => handleScroll(e, "#contact")}
+          className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md cursor-pointer"
+        >
           Say Hello
-        </a> {/* Make sure to have an element with id="contact" on your page */}
+        </a>{" "}
+        {/* Make sure to have an element with id="contact" on your page */}
       </nav>
       <main>{children}</main>
       {/* Footer component will go here */}

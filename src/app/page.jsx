@@ -2,6 +2,7 @@
 "use client";
 import Image from "next/image";
 import ProjectCard from "./components/ProjectCard";
+import Navbar from "./components/Navbar";
 
 
 export default function Page() {
@@ -22,45 +23,40 @@ export default function Page() {
 
 
       {/* Profession and Skills Section */}
-  <section id='skills' className="w-full min-h-screen bg-white">
-  <div className="container mx-auto px-6 py-10 text-center"> {/* Adjusted padding for overall alignment */}
+      <section id='skills' className="w-full min-h-screen bg-white">
+  <div className="container mx-auto px-6 py-10 text-center">
     <h2 className="text-4xl font-semibold mb-8">Hi, I'm Dimitrius, Pleasure to meet you!</h2>
-    <p className="text-xl mb-10 font-semibold">I'm an experienced software developer with an interest in solving complex issues and enjoying good music. I specialize in creating<br/> functional and user-friendly applications</p>
+    <p className="text-xl mb-10 font-semibold">I'm an experienced software developer with an interest in solving complex issues and enjoying good music. I specialize in creating functional and user-friendly applications</p>
 
-    <div className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8"> {/* Flex container for skills */}
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0"> {/* Use padding to adjust layout on smaller screens */}
       {/* Frontend Developer Column */}
-      <div className="flex-1 mt-40"> {/* Takes up half of the space in a flex container */}
-        <div className="mb-4 w-32 h-32 mx-auto"> {/* Placeholder for Frontend SVG */}
-          {/* Replace with img tag or Image component */}
+      <div className="flex-1 mt-20 md:mt-40"> {/* Use less margin-top on smaller screens */}
+        <div className="mb-4 w-24 h-24 md:w-32 md:h-32 mx-auto">
           <img src="/Frontend.svg" alt="Frontend Developer" className="w-full h-full" />
         </div>
-        <h3 className="text-3xl font-semibold">Frontend Developer</h3><br />
-        <p className="mt-2 font-bold">I create responsive and dynamic user interfaces with<br/> modern frontend technologies.</p>
-        <br /><br />
-        <p className='text-purple-700 font-bold'>Languages I speak</p><br />
-        <p className='font-bold'>HTML, CSS, JavaScript </p><br /><br />
-        <p className='font-bold text-purple-700'>Tools and Frameworks</p><br />
+        <h3 className="text-3xl font-semibold">Frontend Developer</h3>
+        <p className="mt-2 font-bold">I create responsive and dynamic user interfaces with modern frontend technologies.</p>
+        <p className='text-purple-700 font-bold mt-4'>Languages I speak</p>
+        <p className='font-bold'>HTML, CSS, JavaScript </p>
+        <p className='font-bold text-purple-700 mt-4'>Tools and Frameworks</p>
         <p className='font-bold'>Next.js, React.js, TailwindCSS </p>
       </div>
 
       {/* Backend Developer Column */}
-      <div className="flex-1 mt-40"> {/* Takes up half of the space in a flex container */}
-        <div className="mb-4 w-32 h-32 mx-auto"> {/* Placeholder for Backend SVG */}
-          {/* Replace with img tag or Image component */}
+      <div className="flex-1 mt-20 md:mt-40">
+        <div className="mb-4 w-24 h-24 md:w-32 md:h-32 mx-auto">
           <img src="/Backend.svg" alt="Backend Developer" className="w-full h-full" />
         </div>
-        <h3 className="text-3xl font-semibold">Backend Developer</h3><br />
-        <p className="mt-2 font-bold">I architect and build scalable and <br /> performant server-side applications.</p>
-        <br /><br />
-        <p className='text-purple-700 font-bold'>Languages I speak</p><br />
-        <p className='font-bold'>Python, PostgresQL </p><br /><br />
-        <p className='font-bold text-purple-700'>Tools and Frameworks</p><br />
+        <h3 className="text-3xl font-semibold">Backend Developer</h3>
+        <p className="mt-2 font-bold">I architect and build scalable and performant server-side applications.</p>
+        <p className='text-purple-700 font-bold mt-4'>Languages I speak</p>
+        <p className='font-bold'>Python, PostgresQL </p>
+        <p className='font-bold text-purple-700 mt-4'>Tools and Frameworks</p>
         <p className='font-bold'>Flask, Jinja2, MongoDB, Postman </p>
       </div>
     </div>
   </div>
 </section>
-
 
 
 {/* Projects Section */}

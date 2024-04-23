@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         {/* Navbar should go here */}
         <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
           {/* Link to home */}
-          <a href="/" className="text-xl font-bold">Logo</a> {/* Replace with your logo */}
+          <a href="/" className="text-xl font-bold">My Portfolio</a> {/* Replace with your logo */}
           {/* Say Hello Link */}
           <a href="/contact" className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md">Say Hello</a>
         </nav>
