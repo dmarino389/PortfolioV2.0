@@ -2,7 +2,7 @@
 "use client";
 import Image from "next/image";
 import ProjectCard from "./components/ProjectCard";
-import Navbar from "./components/Navbar";
+
 
 
 export default function Page() {
