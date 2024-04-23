@@ -27,7 +27,7 @@ const ProjectCard = ({ title, description, imageUrl, projectUrl }) => {
         rel="noopener noreferrer"
         className="absolute inset-0"
       >
-        <span className="sr-only">View {title}</span>
+        <span className="sr-only">View &apos;{title}&apos;</span>
       </a>
     </div>
   );
