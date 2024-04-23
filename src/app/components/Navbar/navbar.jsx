@@ -2,6 +2,8 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Layout({ children }) {
   useEffect(() => {
@@ -27,29 +29,18 @@ export default function Layout({ children }) {
   };
 
   return (
-    <>
-      <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
-        {/* Logo and link to home */}
-        <a
-          href="#home"
-          onClick={(e) => handleScroll(e, "#home")}
-          className="text-xl font-bold cursor-pointer"
-        >
-          <img src="/initiallogo.jpg" alt="Logo" className="h-24 w-24 mr-2" />
-         
+    <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
+      <Link legacyBehavior href="/" passHref>
+        <a className="text-xl font-bold">
+          {/* The Image component for logos should be wrapped in an anchor tag */}
+          <Image src="/initiallogo.jpg" alt="Logo" width={60} height={60} />
         </a>
-        {/* Say Hello link */}
-        <a
-  href="/contact" // Add the leading slash
-  className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md"
->
-  Say Hello
-</a>
-
-      </nav>
-      
-      <main>{children}</main>
-      {/* Footer component will go here */}
-    </>
+      </Link>
+      <Link legacyBehavior href="/contact" passHref>
+        <a className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md">
+          Say Hello
+        </a>
+      </Link>
+    </nav>
   );
 }
