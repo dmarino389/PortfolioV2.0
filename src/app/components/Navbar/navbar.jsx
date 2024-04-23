@@ -29,25 +29,25 @@ export default function Layout({ children }) {
   return (
     <>
       <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
-        {/* We will use a standard <a> tag with an onClick event for smooth scrolling */}
+        {/* Logo and link to home */}
         <a
           href="#home"
           onClick={(e) => handleScroll(e, "#home")}
           className="text-xl font-bold cursor-pointer"
         >
-          <img src="/inititiallogo.jpg" alt="Logo" className="h-8 w-8" />
-        </a>{" "}
-        {/* Placeholder for SVG Logo */}
-        {/* Other navigation links */}
+          <img src="/initiallogo.jpg" alt="Logo" className="h-24 w-24 mr-2" />
+         
+        </a>
+        {/* Say Hello link */}
         <a
-          href="contact"
+          href="#contact"
           onClick={(e) => handleScroll(e, "#contact")}
           className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md cursor-pointer"
         >
           Say Hello
-        </a>{" "}
-        {/* Make sure to have an element with id="contact" on your page */}
+        </a>
       </nav>
+      
       <main>{children}</main>
       {/* Footer component will go here */}
     </>
