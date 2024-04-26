@@ -60,7 +60,7 @@ export default function Page() {
 
 
 {/* Projects Section */}
-<section className="w-full min-h-screen bg-white-100">
+<section className="w-full min-h-screen bg-gray-200">
   <div className="container mx-auto px-6 py-20">
     <h2 className="text-4xl font-semibold text-center mb-12">My Recent Work</h2>
     <div className="flex flex-wrap justify-center gap-20 ">
