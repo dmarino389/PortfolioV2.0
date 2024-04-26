@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer className="p-4 bg-gray-200 text-center">
-          © {new Date().getFullYear()} Your Name. All Rights Reserved.
+          © {new Date().getFullYear()} Dimitrius Marino. All Rights Reserved.
         </footer>
       </body>
     </html>
