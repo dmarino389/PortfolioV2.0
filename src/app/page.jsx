@@ -45,8 +45,8 @@ export default function Page() {
          style={{ transitionDuration: isSkillsVisible ? '1000ms' : '0ms', transitionDelay: isSkillsVisible ? '500ms' : '0ms' }}>
         <div className="container mx-auto px-6 py-10 text-center">
           <h2 className="text-6xl font-semibold mb-8 ">Hi, I&apos;m Dimitrius, Pleasure to meet you!</h2>
-            <hr className="border-t-4 " />         
-            <hr className="border-t-4 " />
+            <hr className="border-t-4 border-purple-700 rounded " />         
+            <hr className="border-t-4 border-purple-700 rounded" />
             <br />
           <p className="text-2xl mb-10 font-bold">I&apos;m an experienced software developer with an interest in solving complex issues and creating functional and user-friendly applications</p>
           {/* Frontend Developer Column */}
