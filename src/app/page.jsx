@@ -43,8 +43,8 @@ export default function Page() {
          className={`w-full min-h-screen bg-white transition-opacity ${isSkillsVisible ? 'opacity-100' : 'opacity-0'}`}
          style={{ transitionDuration: isSkillsVisible ? '1000ms' : '0ms', transitionDelay: isSkillsVisible ? '500ms' : '0ms' }}>
         <div className="container mx-auto px-6 py-10 text-center">
-          <h2 className="text-6xl font-semibold mb-8">Hi, I'm Dimitrius, Pleasure to meet you!</h2>
-          <p className="text-2xl mb-10 font-bold">I'm an experienced software developer with an interest in solving complex issues and creating functional and user-friendly applications</p>
+          <h2 className="text-6xl font-semibold mb-8">Hi, I&apos;m Dimitrius, Pleasure to meet you!</h2>
+          <p className="text-2xl mb-10 font-bold">I&apos;m an experienced software developer with an interest in solving complex issues and creating functional and user-friendly applications</p>
           {/* Frontend Developer Column */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0">
             <div className="flex-1 mt-20 md:mt-40 hover:scale-110 transition-transform duration-300">
@@ -95,7 +95,7 @@ export default function Page() {
             />
             <ProjectCard
               title="PokeApp"
-              description="The Pokédex App is an interactive and engaging web application I developed using Flask, Jinja2, SQLite, and Postman, with integration of the PokéAPI and Bootstrap for styling."
+              description="The Pok&eacute;dex App is an interactive and engaging web application I developed using Flask, Jinja2, SQLite, and Postman, with integration of the Pok&eacute;API and Bootstrap for styling."
               imageUrl="/pokemon.png"
               projectUrl="https://poke-fbst.onrender.com/"
             />
