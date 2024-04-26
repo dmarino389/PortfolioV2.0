@@ -29,14 +29,8 @@ export default function Layout({ children }) {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
-      <Link legacyBehavior href="/" passHref>
-        <a className="text-xl font-bold">
-          {/* The Image component for logos should be wrapped in an anchor tag */}
-          <Image src="/initiallogo.jpg" alt="Logo" width={60} height={60} />
-        </a>
-      </Link>
-      <h1 className="text-white text-3xl">Dimitrius Marino</h1> {/* Added h2 tag with white text color */}
+    <nav className="flex items-center justify-between p-4 bg-gray-200 text-white">
+      
       <Link legacyBehavior href="/contact" passHref>
         <a className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-md">
           Say Hello
