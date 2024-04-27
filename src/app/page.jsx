@@ -49,6 +49,8 @@ export default function Page() {
             <hr className="border-t-4 border-purple-700 rounded" />
             <br />
           <p className="text-2xl mb-10 font-bold">I&apos;m an experienced software developer with an interest in solving complex issues and creating functional and user-friendly applications</p>
+          <hr className="border-t-4 border-purple-700 rounded " />         
+            <hr className="border-t-4 border-purple-700 rounded" />          
           {/* Frontend Developer Column */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0">
             <div className="flex-1 mt-20 md:mt-40 hover:scale-110 transition-transform duration-300">
